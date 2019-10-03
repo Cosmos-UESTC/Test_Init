@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int grade;
+    scanf("%d", &grade);
+    if (grade < 0 || grade >= 100) {
+        printf("Error, grade must be between 0 and 100.");
+    } else {
+        grade = grade / 10;
+        switch (grade) {
+
+        case (10):
+            printf("A");
+        case (9):
+            printf("A");
+        case (8):
+            printf("B");
+        case (7):
+            printf("C");
+        case (6):
+            printf("D");
+        case (5):
+            printf("F");
+        case (4):
+            printf("F");
+        case (3):
+            printf("F");
+        case (2):
+            printf("F");
+        case (1):
+            printf("F");
+        case (0):
+            printf("F");
+        }
+    }
+    return 0;
+}
