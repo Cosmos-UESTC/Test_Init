@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main(void)
+{
+    int i, n, start_day;
+    scanf("%d%d", &n, &start_day);
+    printf("\n");
+    printf("一 二 三 四 五 六 日\n");
+    for (i = 1; i < start_day; i++)
+        printf("   ");
+    for (i = 1; i <= n; i++) {
+        printf("%2d", i);
+        if (((start_day + i - 1) % 7 != 0) && (i != n))
+            printf(" ");
+        if ((start_day + i - 1) % 7 == 0)
+            printf("\n");
+    }
+    printf("\n");
+    return 0;
+}
